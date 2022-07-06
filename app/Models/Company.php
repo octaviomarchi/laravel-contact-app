@@ -15,4 +15,8 @@ class Company extends Model
         'email',
         'website'
     ];
+    
+    public function contacts() {
+        return $this->hasMany(Contact::class);
+    }
 }
