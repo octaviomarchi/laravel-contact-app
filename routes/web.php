@@ -20,12 +20,12 @@ Route::get('/', function () {
 
 Route::get('/contacts', function () {
     return "<h1>All contacts</h1>";
-});
+})->name('contacts.index');
 
 Route::get('/contacts/create', function () {
     return '<h1>Add new contact</h1>';
-});
+})->name('contacts.create');
 
 Route::get('/contacts/{id}', function ($id) {
     return Contact::find($id);
-});
+})->name('contacts.show');
