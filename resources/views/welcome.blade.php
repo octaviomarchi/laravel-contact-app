@@ -23,7 +23,7 @@
     <body class="antialiased">
         <div class="links">
             <a href="{{ route('contacts.index') }}">All Contacts</a>
-            <a href="{{ route('contacts.creatre') }}">Add contact</a>
+            <a href="{{ route('contacts.create') }}">Add contact</a>
             <a href="{{ route('contacts.show', 1) }}">Show a contact</a>
         </div>
     </body>
