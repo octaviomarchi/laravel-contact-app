@@ -19,6 +19,6 @@ class Contact extends Model
     
     public function company()
     {
-        $this->belongsTo(Company::class);
+        return $this->belongsTo(Company::class);
     }
 }
